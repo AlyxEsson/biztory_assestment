@@ -1,0 +1,8 @@
+<div style="display: flex; flex-direction: row;">
+    <button mat-button [routerLink]="['new']">
+       Create New User
+    </button>
+    <div style="flex:1"></div>
+    <mat-paginator [length]="total$|async" [pageSize]="6" [pageIndex]=page$|async (page)="pageChanged($event)">
+    </mat-paginator>
+</div>

@@ -1,0 +1,10 @@
+.view-list {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.view-list>* {
+    flex: 0 1 30%
+}

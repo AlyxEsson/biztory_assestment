@@ -1,0 +1,25 @@
+<div class="main-layout">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>
+                <button mat-icon-button [disabled]=loading$|async routerLink="../">
+                    <mat-icon class="mat-18" >arrow_back</mat-icon>
+                </button> New User
+            </mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <div class="user-card-content">
+                <user-image-uploader></user-image-uploader>
+                <user-details [(user)]="user" [disabled]=!!(loading$|async)></user-details>
+            </div>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <div class="loading-spinner" *ngIf="loading$|async">
+                <mat-spinner diameter=20></mat-spinner>
+            </div>
+            <button mat-button (click)="save()" [disabled]=!!(loading$|async)>Save</button>
+        </mat-card-actions>
+
+    </mat-card>
+</div>

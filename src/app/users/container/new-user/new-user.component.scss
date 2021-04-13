@@ -1,0 +1,21 @@
+.main-layout {
+    display: flex;
+}
+
+.main-layout>* {
+    flex: 1;
+    margin: 50px 50px
+}
+
+.user-card-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-card-content>* {
+    flex: 0 1 30%
+}
+
+.loading-spinner {
+    margin: auto 0;
+}

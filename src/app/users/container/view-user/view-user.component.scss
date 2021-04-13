@@ -1,0 +1,24 @@
+.card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+    padding: 10px 10px;
+}
+
+.card-content>* {
+    flex: 0 1 49%
+}
+
+.full-width {
+    width: 100%;
+}
+
+.action-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.action-row>.spacer {
+    flex: 1
+}

@@ -1,0 +1,17 @@
+<div class="main-layout">
+    <h3>User Details</h3>
+    <div>
+        <mat-form-field class="max-width">
+            <mat-label>First Name</mat-label>
+            <input type="text" matInput autocomplete="off" [(ngModel)]="user.first_name" (ngModelChange)="userUpdate()" [disabled]=disabled>
+        </mat-form-field>
+        <mat-form-field class="max-width">
+            <mat-label>Last Name</mat-label>
+            <input type="text" matInput autocomplete="off" [(ngModel)]="user.last_name" (ngModelChange)="userUpdate()" [disabled]=disabled>
+        </mat-form-field>
+        <mat-form-field class="max-width">
+            <mat-label>Email</mat-label>
+            <input type="text" matInput autocomplete="off" [(ngModel)]="user.email" (ngModelChange)="userUpdate()" [disabled]=disabled>
+        </mat-form-field>
+    </div>
+</div>
