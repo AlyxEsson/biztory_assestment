@@ -8,3 +8,5 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 # Notes from Alex:
 This is a very rough build application with does not have much validation or other 'polished' features. I've built this to focus on Angular Application Structure (The use of Modules, Components, and Services) and the use of Ngrx. 
+
+Please note that the User List view is not updated by Creating New User, Updating User, or Remove User because of the openAPI used. the list is called and paginated directly from the provided API. 
